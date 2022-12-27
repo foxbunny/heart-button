@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Heart Button Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="screen.css">
+    <script defer src="client.js"></script>
+  </head>
+  <body>
+    <h1>Likable gallery</h1>
+
+    <main id="images">
+      <ul>
+        <li>
+          <input id="photo-01-like" aria-labelledby="photo-01-like-label" name="like" value="01" type="checkbox" aria-live="polite">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="photos/photo_01_960.webp" />
+              <img src="photos/photo_01_960.jpg" alt="Macro photograph of a dandelion" loading="lazy">
+            </picture>
+            <svg><use href="heart.svg#heart"/></svg>
+          </div>
+          <label for="photo-01-like" id="photo-01-like-label">
+            <span>I like this photo</span>
+            <svg aria-hidden="true"><use href="heart.svg#heart"/></svg>
+          </label>
+        </li>
+        <li>
+          <input id="photo-02-like" name="like" value="02" type="checkbox">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="photos/photo_02_960.webp" />
+              <img src="photos/photo_01_960.jpg" alt="Macro photograph of a spider web" loading="lazy">
+            </picture>
+            <svg><use href="heart.svg#heart"/></svg>
+          </div>
+          <label for="photo-02-like">
+            <span>I like this photo</span>
+            <svg aria-hidden="true"><use href="heart.svg#heart"/></svg>
+          </label>
+        </li>
+        <li>
+          <input id="photo-03-like" name="like" value="03" type="checkbox">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="photos/photo_03_960.webp" />
+              <img src="photos/photo_01_960.jpg" alt="Macro photograph of vines" loading="lazy">
+            </picture>
+            <svg><use href="heart.svg#heart"/></svg>
+          </div>
+          <label for="photo-03-like">
+            <span>I like this photo</span>
+            <svg aria-hidden="true"><use href="heart.svg#heart"/></svg>
+          </label>
+        </li>
+        <li>
+          <input id="photo-04-like" type="checkbox">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="photos/photo_04_960.webp" />
+              <img src="photos/photo_01_960.jpg" alt="Macro photograph of vines" loading="lazy">
+            </picture>
+            <svg><use href="heart.svg#heart"/></svg>
+          </div>
+          <label for="photo-04-like">
+            <span>I like this photo</span>
+            <svg aria-hidden="true"><use href="heart.svg#heart"/></svg>
+          </label>
+        </li>
+        <li>
+          <input id="photo-05-like" type="checkbox">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="photos/photo_05_960.webp" />
+              <img src="photos/photo_01_960.jpg" alt="Macro photograph of a wild carrot with a pair of shield bugs" loading="lazy">
+            </picture>
+            <svg><use href="heart.svg#heart"/></svg>
+          </div>
+          <label for="photo-05-like">
+            <span>I like this photo</span>
+            <svg aria-hidden="true"><use href="heart.svg#heart"/></svg>
+          </label>
+        </li>
+        <li>
+          <input id="photo-06-like" type="checkbox">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="photos/photo_06_960.webp" />
+              <img src="photos/photo_01_960.jpg" alt="Macro photograph of a wild carrot with a pair of shield bugs" loading="lazy">
+            </picture>
+            <svg><use href="heart.svg#heart"/></svg>
+          </div>
+          <label for="photo-06-like">
+            <span>I like this photo</span>
+            <svg aria-hidden="true"><use href="heart.svg#heart"/></svg>
+          </label>
+        </li>
+        <li>
+          <input id="photo-07-like" type="checkbox">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="photos/photo_07_960.webp" />
+              <img src="photos/photo_01_960.jpg" alt="Macro photograph of a dandelion" loading="lazy">
+            </picture>
+            <svg><use href="heart.svg#heart"/></svg>
+          </div>
+          <label for="photo-07-like">
+            <span>I like this photo</span>
+            <svg aria-hidden="true"><use href="heart.svg#heart"/></svg>
+          </label>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

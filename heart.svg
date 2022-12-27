@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC
+  "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+  <symbol id="heart" viewBox="0 0 32 32">
+    <path
+      d="M15.908,27.118c-3.981,-2.348 -18.825,-13.162 -12.251,-20.517c5.785,-6.473 12.343,1.175 12.343,1.175l0.019,-0.022c0.389,-0.441 6.72,-7.424 12.324,-1.153c6.626,7.413 -8.504,18.339 -12.343,20.571l-0.092,-0.054Z"
+      stroke-width="var(--heart-outline-width)"
+      stroke="var(--heart-outline)"
+      fill="var(--heart-color)"
+    />
+  </symbol>
+</svg>

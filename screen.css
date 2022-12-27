@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="checkbox"],
+label > span {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+ul, li {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  margin: 2rem 0;
+}
+
+#images {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+label {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: max-content;
+}
+
+label > svg {
+  --heart-color: transparent;
+  --heart-outline: black;
+  --heart-outline-width: 2px;
+  width: 2em;
+  height: 2em;
+}
+
+input:checked ~ label > svg {
+  --heart-color: red;
+  --heart-outline: red;
+}
+
+li > div {
+  position: relative;
+}
+
+picture + svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  --heart-color: white;
+  --heart-outline: white;
+  opacity: 0;
+  width: 6rem;
+  height: 6rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+[data-mode=pointer] picture {
+  cursor: pointer;
+}
+
+input:checked + div > svg {
+  visibility: visible;
+  animation: heart-pulse 2s ease-in-out;
+}
+
+[data-mode=keyboard] input:focus ~ label > svg {
+  outline: solid medium;
+  outline-offset: 0.2em;
+  border-radius: 0.2em;
+}
+
+@keyframes heart-pulse {
+  from {
+    opacity: 0;
+    transform:
+     translate(-50%, -50%)
+     scale(0.4);
+  }
+
+  10% {
+    transform:
+      translate(-50%, -50%)
+      scale(1.1);
+  }
+
+  14% {
+    transform:
+      translate(-50%, -50%)
+      scale(0.9);
+  }
+
+  18%, 90% {
+    opacity: 0.8;
+    transform:
+      translate(-50%, -50%)
+      scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform:
+      translate(-50%, -50%)
+      scale(0.4);
+  }
+}
+
